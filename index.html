@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performing Materiality</title>
+ 
+  <style>
+    body { font-family: Courier New, monospace; margin: 0; background-color: ##FFF8E8; color: #222; }
+    header { background-color: ##4B6E5E; color: white; text-align: center; padding: 30px; }
+    nav { background: #ddd; padding: 10px; text-align: center; }
+    nav a { margin: 10px; color: #222; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: ##4B6E5E; }
+    section { padding: 20px; border-bottom: 1px solid #ccc; }
+    h2 { color: ##4B6E5E; }
+    blockquote { background: #efefef; border-left: 5px solid ##4B6E5E; padding: 10px; font-style: italic; }
+    button { background: ##4B6E5E; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    footer { background: ##4B6E5E; color: white; text-align: center; padding: 10px; }
+    .hidden { display: none; }
+    .hover-box { background: #eee; padding: 15px; margin: 15px 0; border-radius: 10px; }
+    .hover-box:hover { background: #cfe2ff; }
+  </style>
+</head>
+</head>
+<body>
+  <header>
+    <h1>Performing Materiality</h1>
+    <p>Explaining Johanna Drucker’s <i>Performative Materiality</i></p>
+  </header>
+
+  <nav>
+    <a href="agendas">Three Agendas</a>
+    <a href="materiality">What is Materiality?</a>
+    <a href="performative">Performative Materiality</a>
+    <a href="interface">Interface</a>
+  </nav>
+
+  <section id="agendas">
+    <h2>The Three Agendas</h2>
+    <ul>
+      <li><strong>1. Shift materiality toward a performative model</strong> Focus on what things <i>do</i>, not just what they <i>are</i>.</li>
+      <li><strong>2. Reconnect to critical theory</strong> – Bring structuralism, post-structuralism, and humanistic critique into digital media.</li>
+      <li><strong>3. Apply these ideas to interface design</strong> – Design interfaces that <i>show</i> interpretation in action.</li>
+    </ul>
+    <img src="images/digital.jpg" alt="Digital media collage">
+  </section>
+
+  <section id="materiality" class="interactive">
+    <h2>What Is Materiality?</h2>
+    <p>
+      Johanna Drucker builds on <strong>Matthew Kirschenbaum</strong>, who rescued digital studies from the myth of being “immaterial.”  
+      He defined:
+    </p>
+    <ul>
+      <li><strong>Forensic materiality:</strong> tangible evidence: ink, code, fingerprints, or scratches on a disk.</li>
+      <li><strong>Formal materiality:</strong> layout, structure, design, and relation between text and image.</li>
+    </ul>
+    <p>Both require <em>interpretation</em>; they are not self-evident.</p>
+    <blockquote>
+      “Every contact leaves a trace.” – Matthew Kirschenbaum
+    </blockquote>
+    <div class="reveal">
+      <button>Click to Reveal: What does Drucker add?</button>
+      <p class="hidden">She adds that we must see materiality not as <i>what things are</i> but as <i>what they do</i> — how they perform within technical, social, and cultural systems.</p>
+    </div>
+  </section>
+
+  <section id="performative">
+    <h2>Performative Materiality</h2>
+    <p>
+      Drucker argues that all texts and systems are <strong>event-based</strong>, they exist through acts of use, reading, and interpretation.
+      Meaning is not fixed; it is <i>performed</i> each time.
+    </p>
+    <p>
+      This idea moves us from <strong>literal materiality</strong> (things as static) to <strong>contingent materiality</strong> (things as events in flux).
+    </p>
+    <ul>
+      <li><strong>Examples:</strong> Reading a website differently each time; user paths change meaning.</li>
+      <li>Connections between <em>Steve Krug’s</em> usability and <em>Stanley Fish’s</em> reader-response theory show that reading online is always performative.</li>
+    </ul>
+    <img src="images/interact.jpg" alt="User interacting with digital text">
+  </section>
+
+  <section id="interface">
+    <h2>Interface as an Event Space</h2>
+    <p>
+      Drucker calls for a new kind of <strong>humanistic interface design</strong> — one that doesn’t just deliver information, but reveals the act of interpretation.
+    </p>
+    <ul>
+      <li>Interfaces are <strong>not things</strong> but <strong>spaces of exchange</strong>.</li>
+      <li>They are <strong>enunciative systems</strong>, they call a <i>subject</i> into being, not just a “user.”</li>
+      <li>Designs should embrace <i>ambiguity, multiplicity, and uncertainty</i>.</li>
+    </ul>
+
+    <div class="hover-box">
+      <p>Hover here to perform meaning.</p>
+      <p class="hidden-text">By interacting, you create meaning — this is <strong>performative materiality</strong> in action!</p>
+    </div>
+
+    <p>
+      Drucker also discusses <strong>distributed materiality</strong> (systems interdependence) and <strong>systemic ecologies</strong> (dynamic networks of matter and meaning).
+    </p>
+
+  </section>
+
+  <footer>
+    <p>Based on Johanna Drucker, “Performative Materiality and Theoretical Approaches to Interface” (2013)</p>
+  </footer>
+
+  <script>
+    function showText(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    const hoverBox = document.querySelector('.hover-box');
+    const hoverText = document.getElementById('hovertext');
+    hoverBox.addEventListener('mouseenter', () => hoverText.style.display = 'block');
+    hoverBox.addEventListener('mouseleave', () => hoverText.style.display = 'none');
+  </script>
+
+</body>
+</html>
